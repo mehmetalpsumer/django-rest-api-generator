@@ -27,7 +27,7 @@ npm i
 npm run serve
 ```
 
-## Run the generated Django apps
+### Run the generated Django apps
 
 Docker and docker-compose are required to run the generated apps.
 
