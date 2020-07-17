@@ -1,0 +1,41 @@
+{
+  "name": "zreportapi",
+  "version": "1.0.0",
+  "description": "API for Django API generator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest --watchAll --no-cache",
+    "postinstall": "mkdir -p projects"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": []
+  },
+  "author": "Mehmet Alp Sümer",
+  "license": "ISC",
+  "dependencies": {
+    "@types/shelljs": "^0.8.8",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/jest": "^26.0.4",
+    "@types/node": "^13.11.1",
+    "@types/supertest": "^2.0.10",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.1.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.8.3"
+  }
+}
