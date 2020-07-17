@@ -27,6 +27,16 @@ npm i
 npm run serve
 ```
 
+### Run the generated Django apps
+
+Docker and docker-compose are required to run the generated apps.
+
+```
+# Unzip the project at 'Downloads' or 'server/projects'.
+cd django_project  # Go into the generated app
+docker-compose up  # Run the containers
+```
+
 ## Screenshots
 1) Choose project and app parameters.
 
