@@ -133,8 +133,10 @@ class Project {
     // PEP8 format files
     await this.formatProjectDocuments(projectDir);
 
+    console.log("!!! aZip: " + `${projectDir}.zip`);
     await this.compressProjectDir(projectDir);
 
+    console.log("!!! Zip: " + `${projectDir}.zip`);
     return `${projectDir}.zip`;
   }
 }

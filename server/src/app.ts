@@ -3,7 +3,6 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import { projectRouter } from './routes/project';
 import { statusRouter } from './routes/status';
-import { cat } from 'shelljs';
 
 const app = express();
 
@@ -11,6 +10,7 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(cors());
 app.use(express.static("dist"));
+app.use(express.static("projects"));
 
 // Routes
 app.use(projectRouter);
