@@ -8,22 +8,22 @@
 
         <div>
           <github-button
-            href="https://github.com/mehmetalpsumer/django-crud-rest-api-generator"
+            href="https://github.com/mehmetalpsumer/django-rest-api-generator"
             data-color-scheme="no-preference: light; light: light; dark: dark;"
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star mehmetalpsumer/django-crud-rest-api-generator on GitHub"
+            aria-label="Star mehmetalpsumer/django-rest-api-generator on GitHub"
             >Star</github-button
           >
           <!-- Place this tag where you want the button to render. -->
           <github-button
-            href="https://github.com/mehmetalpsumer/django-crud-rest-api-generator/issues"
+            href="https://github.com/mehmetalpsumer/django-rest-api-generator/issues"
             data-color-scheme="no-preference: light; light: light; dark: light;"
             data-icon="octicon-issue-opened"
             data-size="large"
             data-show-count="true"
-            aria-label="Issue mehmetalpsumer/django-crud-rest-api-generator on GitHub"
+            aria-label="Issue mehmetalpsumer/django-rest-api-generator on GitHub"
             >Issue</github-button
           >
         </div>

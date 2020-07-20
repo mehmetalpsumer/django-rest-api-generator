@@ -90,6 +90,8 @@
         </q-stepper-navigation>
       </q-step>
     </q-stepper>
+
+    <p>You can check the <a href="https://github.com/mehmetalpsumer/django-rest-api-generator/blob/master/README.md" target="_blank">README on GitHub</a> for the instructons.</p>
   </div>
 </template>
 
@@ -152,7 +154,6 @@ export default {
     },
     updateTreeData: function() {
       const jsonData = this.getJsonData();
-      console.log(jsonData.app.models.length);
       this.treeData = [
         {
           label: jsonData.name,
@@ -197,10 +198,10 @@ export default {
       this.submitted = true;
 
       try {
-        console.log("Sending request...");
+        const apiRoute = this.host + "/api/project";
         const response = await axios({
           method: "POST",
-          url: this.host + "/api/project",
+          url: apiRoute,
           data,
           responseType: "blob",
         });
@@ -219,6 +220,7 @@ export default {
           Please consider submitting a GitHub issue, thanks.\n
           ${e}`;
         alert(errMsg);
+        console.error(e);
       }
     },
   },
