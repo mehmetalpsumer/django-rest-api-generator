@@ -1,6 +1,6 @@
 # Django CRUD REST API Generator
 
-This is a simple     tool that generates a Django REST API with the given models.
+This is a simple tool that generates a Django REST API with the given models.
 
 Specs:
 - Authentication,
@@ -9,7 +9,17 @@ Specs:
 - PEP8,
 - Dockerized.
 
-You can try this on <(soon)>.
+You can test it out [here](https://django-apigen.herokuapp.com/).
+
+### To run the generated Django apps
+
+Docker and docker-compose are required to run the generated apps.
+
+```sh
+# Unzip the project at 'Downloads' or 'server/projects'.
+cd django_project  # Go into the generated app
+docker-compose up  # Run the containers
+```
 
 ## Run local version
 
@@ -25,16 +35,6 @@ Run the client.
 cd client
 npm i
 npm run serve
-```
-
-### Run the generated Django apps
-
-Docker and docker-compose are required to run the generated apps.
-
-```sh
-# Unzip the project at 'Downloads' or 'server/projects'.
-cd django_project  # Go into the generated app
-docker-compose up  # Run the containers
 ```
 
 ## Screenshots
