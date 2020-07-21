@@ -100,7 +100,6 @@
       ref="SmallIntegerField"
     />
 
-
     <BooleanFieldSubForm
       v-else-if="field.fieldType === 'BooleanField'"
       ref="BooleanField"
@@ -121,7 +120,7 @@
       v-else-if="field.fieldType === 'ForeignKeyField'"
       ref="ForeignKeyField"
     />
-    
+
     <SlugFieldSubForm
       v-else-if="field.fieldType === 'SlugField'"
       ref="SlugField"
@@ -185,7 +184,6 @@ export default {
         "AutoField",
         "BigAutoField",
         "BigIntegerField",
-        "BinaryField",
         "BooleanField",
         "CharField",
         "DateField",

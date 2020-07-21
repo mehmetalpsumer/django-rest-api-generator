@@ -1,5 +1,3 @@
-import { writeFileSync, readFileSync } from 'fs';
-import { projectsRoot } from './project.model';
 import { Field } from './field.model';
 
 export class Model {
@@ -94,11 +92,5 @@ export class Model {
 
   public getDetailApiPath(): string {
     return `path('${this.getPath()}/<id>/', api.${this.getDetailApiName()}.as_view()),`;
-  }
-
-  public async create(projectName: string, appName: string): Promise<void> {
-    const filePath = `${projectsRoot}/${projectName}/${appName}/models.py`;
-    const currentFileContent = readFileSync(filePath);
-    writeFileSync(filePath, currentFileContent + this.toString());
   }
 }
