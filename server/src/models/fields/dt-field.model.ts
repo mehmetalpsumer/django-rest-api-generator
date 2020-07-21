@@ -2,16 +2,16 @@ import { Field, CommonFieldOptions } from "../field.model";
 
 export class DtField extends Field {
   autoNow: boolean;
-  autoAddNow: boolean;
+  autoNowAdd: boolean;
 
   constructor(
     commonFields: CommonFieldOptions,
     autoNow: boolean,
-    autoAddNow: boolean
+    autoNowAdd: boolean
   ) {
     super(commonFields);
     this.autoNow = autoNow;
-    this.autoAddNow = autoAddNow;
+    this.autoNowAdd = autoNowAdd;
   }
 
   public toString(): string {
@@ -19,8 +19,8 @@ export class DtField extends Field {
     const args = [
       this.createArgString("auto_now", this.boolToString(this.autoNow), false),
       this.createArgString(
-        "auto_add_now",
-        this.boolToString(this.autoAddNow),
+        "auto_now_add",
+        this.boolToString(this.autoNowAdd),
         false
       ),
       super.commonOptionsToString(),

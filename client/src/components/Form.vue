@@ -91,7 +91,7 @@
       </q-step>
     </q-stepper>
 
-    <p>You can check the <a href="https://github.com/mehmetalpsumer/django-rest-api-generator/blob/master/README.md" target="_blank">README on GitHub</a> for the instructons.</p>
+    <p>You can check the <a href="https://github.com/mehmetalpsumer/django-rest-api-generator/blob/master/README.md" target="_blank">README on GitHub</a> for the instructions.</p>
   </div>
 </template>
 
