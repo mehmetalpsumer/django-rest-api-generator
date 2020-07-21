@@ -91,7 +91,15 @@
       </q-step>
     </q-stepper>
 
-    <p>You can check the <a href="https://github.com/mehmetalpsumer/django-rest-api-generator/blob/master/README.md" target="_blank">README on GitHub</a> for the instructions.</p>
+    <p>
+      You can check the
+      <a
+        href="https://github.com/mehmetalpsumer/django-rest-api-generator/blob/master/README.md"
+        target="_blank"
+        >README on GitHub</a
+      >
+      for the instructions.
+    </p>
   </div>
 </template>
 
@@ -101,11 +109,15 @@ import ProjectSubForm from "./ProjectSubForm";
 import AppSubForm from "./AppSubForm";
 import ModelSubForm from "./ModelSubForm";
 
+console.log();
 export default {
   name: "MainForm",
   data() {
     return {
-      host: "https://django-apigen.herokuapp.com",
+      host:
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:3000"
+          : "https://django-apigen.herokuapp.com",
       submitted: false,
       step: 1,
       models: [],
@@ -206,9 +218,9 @@ export default {
           responseType: "blob",
         });
         const url = window.URL.createObjectURL(new Blob([response.data]));
-        const link = document.createElement('a');
+        const link = document.createElement("a");
         link.href = url;
-        link.setAttribute('download', 'project.zip');
+        link.setAttribute("download", "project.zip");
         document.body.appendChild(link);
         link.click();
 

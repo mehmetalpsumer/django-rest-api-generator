@@ -1,3 +1,4 @@
+const djangoUtils = `
 import warnings
 from calendar import timegm
 from datetime import datetime
@@ -12,7 +13,7 @@ def jwt_payload_handler(user):
 
     warnings.warn(
         'The following fields will be removed in the future: '
-        '`email` and `user_id`. ',
+        '\`email\` and \`user_id\`. ',
         DeprecationWarning
     )
 
@@ -32,3 +33,8 @@ def jwt_payload_handler(user):
         payload['iss'] = api_settings.JWT_ISSUER
 
     return payload
+
+`;
+
+export { djangoUtils }
+ 
