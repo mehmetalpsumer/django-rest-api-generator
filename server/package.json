@@ -7,7 +7,7 @@
     "dev": "nodemon",
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "test": "jest --watchAll --no-cache",
+    "test": "jest --watchAll",
     "postinstall": "mkdir -p projects"
   },
   "jest": {
